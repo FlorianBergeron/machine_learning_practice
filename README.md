@@ -10,18 +10,18 @@
   * Apply **feature scalling.**
   
 **PART II - REGRESSION**
-* [X] regression_simple.py
-* [X] regression_multiple.py
-* [X] regression_polynomial.py
+* [X] simple_linear_regression.py
+* [X] multiple_linear_regression.py
+* [X] polynomial_linear_regression.py
 * [ ] svr.py (Support Vector Regression)
-* [ ] regression_decision_tree.py
-* [ ] regression_random_forest.py
+* [ ] decision_tree_regression.py
+* [ ] random_forest_regression.py
 * [X] Evaluate Regression Models Performance
   * [X] R Squared (R²).
   * [X] Adjusted R².
 
 **PART III - CLASSIFICATION**
-* [X] regression_logistic.py
+* [X] logistic_linear_regression.py
 * [ ] k_nn.py (K-Nearest Neightbors : K-NN)
 * [X] svm.py
 * [X] k_svm.py
@@ -29,7 +29,7 @@
   * [X] Sigmoid Kernel.
   * [X] Polynomial Kernel.
 * [ ] naive_bayes.py
-* [ ] class_random_forest.py
+* [ ] random_forest_classification.py
 * [X] Evaluating Classification Models Performance
   * [X] False Positives & False Negatives.
   * [X] Confusion matrix.
