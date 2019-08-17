@@ -1,4 +1,4 @@
-# CLASSIFICATION : SVM
+# CLASSIFICATION - SVM
 
 # =============================================================================
 ### Data Preprocessing ###
@@ -26,8 +26,9 @@ X_test = sc.transform(X_test)
 # =============================================================================
 
 # =============================================================================
-### Construction du modèle de Régression Logistique ###
+### SVM Classification model ###
 
+# Build Model
 from sklearn.svm import SVC # Support Vector for Classification (SVC), because there is a class for regression too (SVR)
 classifier = SVC(kernel = 'linear', random_state = 0)
 classifier.fit(X_train, y_train)

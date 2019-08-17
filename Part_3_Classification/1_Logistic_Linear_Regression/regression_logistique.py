@@ -1,4 +1,4 @@
-# Classification - Régression Logistique
+# CLASSIFICATION - LOGISTIC REGRESSION
 
 # =============================================================================
 ### Data Preprocessing ###
@@ -26,7 +26,9 @@ X_test = sc.transform(X_test)
 # =============================================================================
 
 # =============================================================================
-### Construction du modèle de Régression Logistique ###
+### Logistic Regression model ###
+
+# Build Model
 from sklearn.linear_model import LogisticRegression
 classifier = LogisticRegression(random_state = 0)
 classifier.fit(X_train, y_train)

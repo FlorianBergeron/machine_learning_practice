@@ -1,7 +1,6 @@
 ### CLUSTERING - K-MEANS ###
 
 # =============================================================================
-
 ### Data Preprocessing ###
 
 # Import libraries
@@ -15,7 +14,6 @@ dataset = pd.read_csv("Mall_Customers.csv")
 X = dataset.iloc[:, [3,4]].values
 
 # =============================================================================
-
 ### Search optimal cluster number ###
 
 # Use elbox method to find optimal clusters number ("K")
@@ -38,9 +36,9 @@ plt.ylabel('WCSS')
 plt.show()
 
 # =============================================================================
+### K-MEANS clustering model ###
 
-### Build model ###
-
+# Build model
 from sklearn.cluster import KMeans
 
 kmeans = KMeans(n_clusters = 5, init = 'k-means++', random_state = 0)

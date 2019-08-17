@@ -1,4 +1,4 @@
-# Data Preprocessing
+### DATA PREPROCESSING ###
 
 # Import libraries
 import numpy as np
@@ -18,7 +18,7 @@ imputer = SimpleImputer(missing_values = np.nan, strategy = "mean")
 imputer.fit(X[:, 1:3])
 X[:, 1:3] = imputer.transform(X[:, 1:3])
 
-# Manage catégoriques variables
+# Manage categorical data
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import OneHotEncoder
 

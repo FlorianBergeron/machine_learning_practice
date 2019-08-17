@@ -1,5 +1,6 @@
-# Régression Linéaire simple
+### REGRESSION - SIMPLE LINEAR
 
+# =============================================================================
 ### Data Preprocessing ###
 
 # Import libraries
@@ -12,16 +13,16 @@ dataset = pd.read_csv("Salary_Data.csv")
 X = dataset.iloc[:, :-1].values
 Y = dataset.iloc[:, -1].values
 
-# =============================================================================
+# =!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=
 #   
 #  NOTE:
 #
-#  On devrait normalement supprimer ce passage,
-#  car il n'est pas utile, nous n'avons pas de 
-#  données manquantes dans ce dataset, n'y de
-#  variables catégoriques et pas besoin de 
-#  faire de feature scalling, car nous sommes 
-#  dans une RLS.
+#   This passage should normally be deleted,
+#   because it is not useful, we have no
+#   missing data in this dataset, no
+#   categorical data and no need for
+#   do feature scalling, because we are
+#   in an simple linear regression.
 #
 # =============================================================================
 # 
@@ -47,13 +48,15 @@ Y = dataset.iloc[:, -1].values
 # X_train = sc.fit_transform(X_train)
 # X_test = sc.transform(X_test)
 #
-# =============================================================================
+# =!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=!=
 
 # Divid dataset between Training set & Test set
 from sklearn.model_selection import train_test_split
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 1.0/3, random_state = 0)
+# =============================================================================
 
-### Modèle de Régression Linéaire Simple ###
+# =============================================================================
+### Simple Linear Regression model ###
 
 # Build Model
 from sklearn.linear_model import LinearRegression
@@ -67,9 +70,10 @@ y_pred = regressor.predict(X_test)
 regressor.predict([[15]])
 
 # Visualize results
-plt.scatter(X_test, Y_test, color = 'red') # Les points d'observation du training set.
-plt.plot(X_train, regressor.predict(X_train), color = 'blue') # La courbe de prédiction de notre modèle RLS.
+plt.scatter(X_test, Y_test, color = 'red') # Training set observation points.
+plt.plot(X_train, regressor.predict(X_train), color = 'blue') # Prediction courbe of our simple linear regression.
 plt.title('Salary vs Experience')
 plt.xlabel('Experience')
 plt.ylabel('Salary')
 plt.show()
+# =============================================================================

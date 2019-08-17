@@ -1,6 +1,7 @@
-# Régression Linéaire simple
+### REGRESSION - MULITPLE LINEAR
 
-# Data Preprocessing
+# =============================================================================
+### Data Preprocessing ###
 
 # Import libraries
 import numpy as np
@@ -29,7 +30,10 @@ X = X[:, 1:]
 from sklearn.model_selection import train_test_split
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 0.2, random_state = 0)
 
-### Modèle de Régression Linéaire Multiple ###
+# =============================================================================
+
+# =============================================================================
+### Multiple Linear Regression model ###
 
 # Build Model
 from sklearn.linear_model import LinearRegression
@@ -39,3 +43,4 @@ regressor.fit(X_train, Y_train)
 # Do new predictions
 y_pred = regressor.predict(X_test)
 regressor.predict(np.array([[1, 0, 130000, 140000, 300000]]))
+# =============================================================================

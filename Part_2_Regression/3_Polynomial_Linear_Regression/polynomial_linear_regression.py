@@ -1,4 +1,7 @@
-# RÃ©gression Polynomiale
+### REGRESSION - POLYNOMIAL LINEAR
+
+# =============================================================================
+### Data Preprocessing ###
 
 # Import libraries
 import numpy as np
@@ -9,8 +12,10 @@ import pandas as pd
 dataset = pd.read_csv("Position_Salaries.csv")
 X = dataset.iloc[:, 1:2].values
 y = dataset.iloc[:, -1].values
+# =============================================================================
 
-### Modèle de Ré©gression Polynomiale ###
+# =============================================================================
+### Polynomial Linear Regression model ###
 
 # Build Model
 from sklearn.linear_model import LinearRegression
@@ -18,7 +23,7 @@ from sklearn.preprocessing import PolynomialFeatures
 poly_reg = PolynomialFeatures(degree = 4)
 X_poly = poly_reg.fit_transform(X)
 
-# Ally our modèle with new matrice X_poly to transform them in a RL model non-linear.
+# Ally our modï¿½le with new matrice X_poly to transform them in a RL model non-linear.
 regressor = LinearRegression()
 regressor.fit(X_poly, y)
 
@@ -32,3 +37,4 @@ plt.title('Salary vs Experience')
 plt.xlabel('Experience')
 plt.ylabel('Salary')
 plt.show()
+# =============================================================================
