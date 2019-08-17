@@ -1,4 +1,4 @@
-# Machine Learning - Practice
+# MACHINE LEARNING - PRACTISE
 
 **PART I - DATA PREPROCESSING**
 * [X] [data_preprocessing.py](https://github.com/FlorianBergeron/machine_learning_practice/blob/master/Part_1_DataPreprocessing/data_preprocessing.py)
