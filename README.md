@@ -1,6 +1,6 @@
 # Machine Learning - Practice
 
-PART I - DATA PREPROCESSING
+**PART I - DATA PREPROCESSING**
 * [X] [data_preprocessing.py](https://github.com/FlorianBergeron/machine_learning_practice/blob/master/1_variable.py)
   * Import **Libraries.**
   * Import **DataSet.**
@@ -9,7 +9,7 @@ PART I - DATA PREPROCESSING
   * Divid dataset in **training_set** & **test_set.**
   * Apply **feature scalling.**
 
-PART II - REGRESSION
+**PART II - REGRESSION**
 * [X] regression_simple.py
 * [X] regression_multiple.py
 * [X] regression_polynomial.py
@@ -20,7 +20,7 @@ PART II - REGRESSION
   * [X] R Squared (R²).
   * [X] Adjusted R².
 
-PART III - CLASSIFICATION
+**PART III - CLASSIFICATION**
 * [X] regression_logistic.py
 * [ ] k_nn.py (K-Nearest Neightbors : K-NN)
 * [X] svm.py
@@ -37,7 +37,7 @@ PART III - CLASSIFICATION
   * [X] CAP Curve.
   * [X] CAP Curve Analysis
 
-PART IV - CLUSTERING
+**PART IV - CLUSTERING**
 * [X] k_means.py
   * [X] K-means++.
   * [X] WCSS.
