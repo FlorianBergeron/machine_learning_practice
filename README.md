@@ -11,7 +11,7 @@
   
 **PART II - REGRESSION**
 * [X] [simple_linear_regression.py](https://github.com/FlorianBergeron/machine_learning_practice/blob/master/Part_2_Regression/1_Simple_Linear_Regression/simple_linear_regression.py)
-* [X] [multiple_linear_regression.py](https://github.com/FlorianBergeron/machine_learning_practice/blob/master/Part_2_Regression/2_Multile_Linear_Regression/multiple_linear_regression.py)
+* [X] [multiple_linear_regression.py](https://github.com/FlorianBergeron/machine_learning_practice/blob/master/Part_2_Regression/2_Multiple_Linear_Regression/multiple_linear_regression.py)
 * [X] [polynomial_linear_regression.py](https://github.com/FlorianBergeron/machine_learning_practice/blob/master/Part_2_Regression/3_Polynomial_Linear_Regression/polynomial_linear_regression.py)
 * [ ] svr.py (Support Vector Regression)
 * [ ] decision_tree_regression.py
