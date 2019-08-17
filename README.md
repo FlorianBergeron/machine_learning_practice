@@ -8,7 +8,7 @@
   * Manage **categorical data.**
   * Divid dataset in **training_set** & **test_set.**
   * Apply **feature scalling.**
-
+  
 **PART II - REGRESSION**
 * [X] regression_simple.py
 * [X] regression_multiple.py
